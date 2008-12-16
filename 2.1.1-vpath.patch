@@ -1,0 +1,11 @@
+--- origsrc/gtk+extra-2.1.1/gtkextra/Makefile.am	2005-06-15 17:53:55.000000000 -0500
++++ src/gtk+extra-2.1.1/gtkextra/Makefile.am	2008-12-16 02:07:19.540750000 -0600
+@@ -169,7 +169,7 @@
+ 	gtkextrafeatures.h.in	\
+ 	gtkextra-marshal.list 	
+ 
+-INCLUDES = -I$(top_buildir) -I$(top_srcdir) $(GTK_CFLAGS) 
++INCLUDES = -I$(top_builddir) -I$(top_srcdir) $(GTK_CFLAGS) 
+ 
+ # target platform:
+ lib_LTLIBRARIES = $(gtkextratargetlib)

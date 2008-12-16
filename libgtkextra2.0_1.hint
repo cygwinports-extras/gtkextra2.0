@@ -1,0 +1,7 @@
+category: Gnome
+requires: cygwin libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libpango1.0_0
+external-source: gtkextra2.0
+sdesc: "Additional graphing widgets for GTK+ 2.x (runtime)"
+ldesc: "GTK+extra is a useful widget set complementary to GTK+ for creating
+graphical interfaces for the X Windows System. It is written in C and
+requires GTK+ version 2.x."

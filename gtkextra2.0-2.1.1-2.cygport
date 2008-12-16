@@ -1,0 +1,19 @@
+ORIG_PN="gtk+extra"
+inherit gnome2
+
+DESCRIPTION="Additional graphing widgets for gtk+-2.0"
+HOMEPAGE="http://gtkextra.sourceforge.net/"
+SRC_URI="mirror://sourceforge/scigraphica/${ORIG_PN}-${PV}.tar.gz"
+PATCH_URI="
+	mirror://portage/x11-libs/gtk+extra/files/gtk+extra-2.1.1-glib2.10-full-fix.patch
+	mirror://portage/x11-libs/gtk+extra/files/gtk+extra-2.1.1-fix-row-deletion-segfault.patch
+	2.1.1-libtool22.patch
+	2.1.1-not-win32.patch
+	2.1.1-vpath.patch
+"
+
+PKG_NAMES="${PN} lib${PN}_1 lib${PN}-devel"
+libgtkextra2_0_1_CONTENTS="usr/bin/*-2.0-1.dll usr/share/"
+libgtkextra2_0_devel_CONTENTS="usr/include/ usr/lib/"
+
+CYGCONF_ARGS="--with-gdktarget=x11"

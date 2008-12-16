@@ -1,47 +1,29 @@
-gtkextra2-x11
+gtkextra2.0
 -------------------------------------------
 GTK+extra is a useful widget set complementary to GTK+ for creating
 graphical interfaces for the X Windows System. It is written in C and
 requires GTK+ version 2.x.
 
 Runtime requirements:
-  cygwin-1.5.18-1
-  atk-runtime-1.8.0-1
-  expat-1.95.8-1
-  glib2-runtime-2.4.8-1
-  gtk2-x11-runtime-2.4.14-1
-  libXft2-2.1.6-1
-  libfontconfig1-2.2.2-1
-  libfreetype26-2.1.5-1
-  libiconv2-1.9.2-1
-  libintl3-0.14.1-1
-  pango-runtime-1.6.0-2
-  xorg-x11-bin-dlls-6.8.2.0-1
-  zlib-1.2.2-2
+  cygwin-1.5.25-15
+  libgdk_pixbuf2.0_0-2.14.5-1
+  libglib2.0_0-2.18.3-1
+  libgtk2.0_0-2.14.5-1
+  libpango1.0_0-1.22.3-1
 
 Build requirements:
-  cygwin-1.5.18-1
-  autoconf2.5-2.59-1
-  automake1.7-1.7.9-2
-  binutils-20050610-1
-  gawk-3.1.5-1
-  gcc-core-3.4.4-1
-  libtool1.5-1.5.18-1
-  make-3.80-1
-  sed-4.1.4-1
-
-  atk-runtime-1.8.0-1
-  expat-1.95.8-1
-  gettext-0.14.1-1
-  glib2-devel-2.4.8-1
-  gtk2-x11-devel-2.4.14-1
-  libXft-devel-2.1.6-1
-  libfontconfig-devel-2.2.2-1
-  libfreetype2-devel-2.1.5-1
-  libiconv-1.9.2-1
-  pango-devel-1.6.0-2
-  xorg-x11-devel-6.8.2.0-1
-  zlib-1.2.2-2
+(besides corresponding devel packages)
+  autoconf2.5-2.63-1
+  automake1.7-1.7.9-3
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  gnome-common-2.24.0-1
+  libtool-2.2.6a-1
+  make-3.81-1
+  pkg-config-0.23a-2
+  sed-4.1.5-2
 
 Canonical website:
   http://gtkextra.sourceforge.net/
@@ -52,21 +34,30 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtkextra2-x11-2.1.1-1-src.tar.bz2
+  unpack gtkextra2.0-2.1.1-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  ./gtk+extra-2.1.1-1.sh all
+  cygport ./gtkextra2.0-2.1.1-1.cygport all
 
 This will create:
-  /usr/src/gtkextra2-x11-2.1.1-1-src.tar.bz2
-  /usr/src/gtkextra2-x11-2.1.1-1.tar.bz2
+  /usr/src/gtkextra2.0-2.1.1-1-src.tar.bz2
+  /usr/src/libgtkextra2.0-devel-2.1.1-1.tar.bz2
+  /usr/src/libgtkextra2.0_1-2.1.1-1.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
+(libgtkextra2.0_1)
   /usr/bin/cyggtkextra-x11-2.0-1.dll
+  /usr/share/doc/gtkextra2.0-2.1.1/AUTHORS
+  /usr/share/doc/gtkextra2.0-2.1.1/COPYING
+  /usr/share/doc/gtkextra2.0-2.1.1/ChangeLog
+  /usr/share/doc/gtkextra2.0-2.1.1/INSTALL
+  /usr/share/doc/gtkextra2.0-2.1.1/README
+
+(libgtkextra2.0-devel)
   /usr/include/gtkextra-2.0/gtkextra/gtkbordercombo.h
   /usr/include/gtkextra-2.0/gtkextra/gtkcharsel.h
   /usr/include/gtkextra-2.0/gtkextra/gtkcheckitem.h
@@ -116,63 +107,17 @@ Files included in the binary package:
   /usr/lib/libgtkextra-x11-2.0.dll.a
   /usr/lib/libgtkextra-x11-2.0.la
   /usr/lib/pkgconfig/gtkextra-2.0.pc
-  /usr/share/doc/Cygwin/gtkextra2-x11-2.1.1.README
-  /usr/share/doc/gtkextra2-x11-2.1.1/AUTHORS
-  /usr/share/doc/gtkextra2-x11-2.1.1/ChangeLog
-  /usr/share/doc/gtkextra2-x11-2.1.1/COPYING
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-bordercombo.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-charsel.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-checkitem.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-colorcombo.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-combobox.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-csurface.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-dirtree.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-filelist.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-fontcombo.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-general.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-iconfileselection.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-iconlist.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-itementry.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-plot.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-plot3d.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-plotbar.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-plotbox.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-plotcanvas.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-plotdata.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-plotdt.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-plotflux.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-plotpc.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-plotpixmap.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-plotpolar.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-plotprint.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-plotps.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-plotstructures.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-plotsurface.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-psfont.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-sheet.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-sheetstructures.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-togglecombo.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/gtkextra-version.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/index.html
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/pics/gtk_border_combo.jpg
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/pics/gtk_charsel.png
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/pics/gtk_color_combo.jpg
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/pics/gtk_conlist_workbench.jpg
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/pics/gtk_filelist_filter.jpg
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/pics/gtk_filelist_new.jpg
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/pics/gtk_filelist_tree.jpg
-  /usr/share/doc/gtkextra2-x11-2.1.1/html/pics/gtk_iconlist_plot.jpg
-  /usr/share/doc/gtkextra2-x11-2.1.1/INSTALL
-  /usr/share/doc/gtkextra2-x11-2.1.1/NEWS
-  /usr/share/doc/gtkextra2-x11-2.1.1/README
-  /usr/share/doc/gtkextra2-x11-2.1.1/TODO
 
 ------------------
 
 Port Notes:
 
+----- version 2.1.1-2 -----
+Rebuilt with Gentoo patches.
+
 ----- version 2.1.1-1 -----
 Initial release for Cygwin.
 
 
-Cygwin port maintained by:  http://cygwin-ports.sourceforge.net/
+Cygwin port maintained by:
+http://www.cygwinports.org/
