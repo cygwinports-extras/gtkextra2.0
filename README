@@ -5,23 +5,24 @@ graphical interfaces for the X Windows System. It is written in C and
 requires GTK+ version 2.x.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libgdk_pixbuf2.0_0-2.14.5-1
-  libglib2.0_0-2.18.3-1
-  libgtk2.0_0-2.14.5-1
-  libpango1.0_0-1.22.3-1
+  cygwin-1.7.0-44
+  libgcc1-4.3.2-2
+  libgdk_pixbuf2.0_0-2.16.0-1
+  libglib2.0_0-2.20.0-1
+  libgtk2.0_0-2.16.0-1
+  libpango1.0_0-1.24.0-1
 
 Build requirements:
 (besides corresponding devel packages)
-  autoconf2.5-2.63-1
-  automake1.7-1.7.9-3
+  autoconf2.5-2.63-10
+  automake1.7-1.7.9-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gnome-common-2.24.0-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gnome-common-2.26.0-1
   libtool-2.2.6a-1
-  make-3.81-1
+  make-3.81-2
   pkg-config-0.23a-2
   sed-4.1.5-2
 
@@ -29,7 +30,7 @@ Canonical website:
   http://gtkextra.sourceforge.net/
 
 Canonical download:
-  http://prdownloads.sourceforge.net/scigraphica/
+  http://downloads.sourceforge.net/scigraphica/
 
 -------------------------------------------
 
@@ -51,11 +52,10 @@ Files included in the binary package:
 
 (libgtkextra2.0_1)
   /usr/bin/cyggtkextra-x11-2.0-1.dll
-  /usr/share/doc/gtkextra2.0-2.1.1/AUTHORS
-  /usr/share/doc/gtkextra2.0-2.1.1/COPYING
-  /usr/share/doc/gtkextra2.0-2.1.1/ChangeLog
-  /usr/share/doc/gtkextra2.0-2.1.1/INSTALL
-  /usr/share/doc/gtkextra2.0-2.1.1/README
+  /usr/share/doc/gtkextra2.0/AUTHORS
+  /usr/share/doc/gtkextra2.0/COPYING
+  /usr/share/doc/gtkextra2.0/ChangeLog
+  /usr/share/doc/gtkextra2.0/README
 
 (libgtkextra2.0-devel)
   /usr/include/gtkextra-2.0/gtkextra/gtkbordercombo.h
@@ -112,11 +112,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 2.1.1-2 -----
-Rebuilt with Gentoo patches.
-
------ version 2.1.1-1 -----
-Initial release for Cygwin.
+----- version 2.1.1-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
