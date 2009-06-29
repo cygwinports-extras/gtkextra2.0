@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin libgtkextra2.0_1 libgdk_pixbuf2.0-devel libglib2.0-devel libgtk2.0-devel libpango1.0-devel
+requires: libgtkextra2.0_1 libgdk_pixbuf2.0-devel libglib2.0-devel libgtk2.0-devel libpango1.0-devel
 external-source: gtkextra2.0
 sdesc: "Additional graphing widgets for GTK+ 2.x (development)"
 ldesc: "GTK+extra is a useful widget set complementary to GTK+ for creating
