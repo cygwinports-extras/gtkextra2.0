@@ -1,15 +1,15 @@
---- origsrc/gtk+extra-2.1.1/configure.in	2005-06-24 12:34:06.000000000 -0500
-+++ src/gtk+extra-2.1.1/configure.in	2008-12-16 00:59:00.290750000 -0600
-@@ -93,7 +93,7 @@
+--- origsrc/gtk+extra-2.1.2/configure.in	2011-01-31 02:40:55.168491900 -0600
++++ src/gtk+extra-2.1.2/configure.in	2011-01-31 02:42:27.380925200 -0600
+@@ -94,7 +94,7 @@ if test "$os_win32" = "yes"; then
  fi
  AM_CONDITIONAL(MS_LIB_AVAILABLE, test x$ms_librarian = xyes)
  
 -if test "$platform_win32" = "yes"; then
 +if test "$os_win32" = "yes"; then
-   case " $CFLAGS " in
-   *[\ \	]-fnative-struct[\ \	]*) ;;
-   *) CFLAGS="$CFLAGS -fnative-struct" ;;
-@@ -156,7 +156,7 @@
+   gdktarget=win32
+ else
+   gdktarget=x11
+@@ -155,7 +155,7 @@ dnl header file checks
  AC_CHECK_HEADERS(unistd.h, AC_DEFINE(HAVE_UNISTD_H))
  AC_CHECK_HEADERS(dirent.h, AC_DEFINE(HAVE_DIRENT_H))
  dnl Don't attempt to use fnmatch under win32 due to problems with creating DLLs.
